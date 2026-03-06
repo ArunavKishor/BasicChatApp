@@ -61,7 +61,7 @@ export const UserLogin = async (req, res, next) => {
       const error = new Error("Please log in with Google");
       error.statusCode = 400;
       return next(error);
-                           }
+    }
 
     const isPasswordMatch = await bcrypt.compare(
       password,

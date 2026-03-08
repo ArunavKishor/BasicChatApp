@@ -27,6 +27,11 @@ export const UserRegister = async (req, res, next) => {
     await User.create({
       fullName,
       email,
+
+
+
+
+      
       mobileNumber,
       password: hashedPassword,
       userType: "regular",
